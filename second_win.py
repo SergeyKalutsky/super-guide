@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QWidget, QLabel, QPushButton, QVBoxLayout, QLineEdit
+from PyQt5.QtWidgets import QWidget, QLabel, QPushButton, QVBoxLayout, QLineEdit, QHBoxLayout
 from inst import txt_title, win_height, win_width, win_x, win_y
 
 class TestWin(QWidget):
