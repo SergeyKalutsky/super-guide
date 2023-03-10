@@ -1,5 +1,5 @@
 from PyQt5.QtWidgets import QWidget
-
+from inst import *
 
 class MainWin(QWidget):
     def __init__(self):
