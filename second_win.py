@@ -20,3 +20,6 @@ class TestWin(QWidget):
         self.line_test1 = QLineEdit('0')
         self.line_test1 = QLineEdit('0')
         self.line_test3 = QLineEdit('0')
+        self.l_line = QVBoxLayout()
+        self.r_line = QVBoxLayout()
+        self.h_line = QHBoxLayout()
