@@ -3,6 +3,7 @@ from PyQt5.QtWidgets import QWidget, QLabel, QPushButton, QVBoxLayout, QApplicat
 from inst import txt_title, win_height, win_width, win_x, win_y, txt_hello, txt_instruction, txt_next
 from second_win import TestWin
 
+
 class MainWin(QWidget):
     def __init__(self):
         super().__init__()
@@ -32,9 +33,9 @@ class MainWin(QWidget):
         self.tw = TestWin()
 
     def connects(self):
-        pass
+        self.button.clicked.connect(self.next_click)
+
 
 app = QApplication([])
 mw = MainWin()
 app.exec_()
-
