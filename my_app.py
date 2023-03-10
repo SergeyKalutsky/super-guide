@@ -1,5 +1,5 @@
-from PyQt5.QtWidgets import QWidget
-from inst import txt_title, win_height, win_width, win_x, win_y
+from PyQt5.QtWidgets import QWidget, QLabel, QPushButton, QVBoxLayout
+from inst import txt_title, win_height, win_width, win_x, win_y, txt_hello, txt_instruction, txt_next
 
 
 class MainWin(QWidget):
@@ -15,8 +15,14 @@ class MainWin(QWidget):
         self.resize(win_width, win_height)
         self.move(win_x, win_y)
 
-    def initUI():
-        pass
+    def initUI(self):
+        self.hello_text = QLabel(txt_hello)
+        self.instruction = QLabel(txt_instruction)
+        self.button = QPushButton(txt_next)
+        self.layout = QVBoxLayout()
+        self.hello_text.addWidget(self.layout)
+        self.instruction.addWidget(self.layout)
+        self.button.addWidget(self.layout)
 
     def connects():
         pass
